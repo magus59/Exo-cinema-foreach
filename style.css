@@ -1,0 +1,129 @@
+@font-face {
+  font-family: uniform;
+  src: url(./assets/fonts/Uniform.ttf);
+}
+
+:root {
+  --color-primary: #186cb0;
+  --color-button: #d03737;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  width: 100%;
+  height: 60px;
+  background-color: var(--color-primary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-family: uniform;
+  padding: 0 40px;
+}
+
+.compte-espace {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.compte-espace img {
+  width: 20px;
+  filter: invert();
+}
+
+.compte-espace p:hover {
+  font-weight: bold;
+}
+
+.espace,
+.compte {
+  margin: 0 10px;
+}
+
+.image {
+  position: relative;
+  width: 95%;
+  margin: 10px 2.5%;
+}
+
+.image img {
+  width: 100%;
+}
+
+.jeu-concour {
+  position: absolute;
+  top: 70px;
+  right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  width: 450px;
+  height: 150px;
+  background-color: #00000081;
+  color: white;
+  font-size: 1.7rem;
+  border-radius: 5px;
+}
+
+.jeu-concour button {
+  width: 90%;
+  margin: auto;
+  background-color: var(--color-button);
+  border: 0;
+  height: 50px;
+  color: white;
+  font-size: 1.7rem;
+  border-radius: 5px;
+}
+
+.jeu-concour button:hover {
+  background-color: #982a2a;
+}
+
+.jeu-concour p {
+  margin: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  .jeu-concour {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 350px;
+    height: 100px;
+    font-size: 1rem;
+  }
+
+  .jeu-concour button {
+    height: 50px;
+    font-size: 1rem;
+  }
+
+  .jeu-concour p {
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .image-header {
+    display: none;
+  }
+
+  .espace {
+    display: none;
+  }
+
+  nav {
+    padding: 0 10px;
+  }
+}
