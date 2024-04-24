@@ -6,12 +6,14 @@
 :root {
   --color-primary: #186cb0;
   --color-button: #d03737;
+  --color-fond: #e0dfdf;
 }
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: uniform;
 }
 
 nav {
@@ -92,6 +94,245 @@ nav {
 
 .jeu-concour p {
   margin: 10px;
+}
+
+.pseudo-nav{
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.tarif, .film{
+    width: 50%;
+    background-color: var(--color-primary);
+    color: white;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    text-align: center;
+    height: 40px;
+}
+
+.film{
+    margin-left: 5px;
+}
+
+.tarif{
+    margin-right: 5px;
+}
+
+.tarif a, .film a{
+    text-decoration: none;
+    color: white;
+}
+
+#tarif{
+    margin: 10px 0;
+}
+
+.titre-tarif, .titre-film{
+    margin: 20px;
+    margin-left: 2.5%;
+    margin-bottom: 40px;
+    margin-top: 30px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: var(--color-primary);
+}
+
+.prix-abonnement{
+    width: 93%;
+    background-color: var(--color-fond);
+    height: 60px;
+    margin: auto;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 20px;
+    border-bottom: 1px solid black;
+}
+
+.produit{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.prix{
+    padding: 10px 0;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.films-salles{
+    border-bottom: 1px solid black;
+    width: 93%;
+    margin: auto;
+    background-color: var(--color-fond);
+
+}
+
+.salles{
+    width: 98%;
+    height: 100px;
+    margin: auto;
+    margin-bottom: 10px;
+    background-color: #bbb7b7;
+}
+
+.films-description{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    margin: auto;
+    padding: 20px 10px 10px 10px;
+}
+
+.image-description img{
+    width: 100%;
+}
+
+.image-description{
+    display: flex;
+    flex-direction: row;
+}
+
+.coeur{
+    margin: 0 20px;
+    font-size: 1rem;
+}
+
+.titre-coeur{
+    display: flex;
+    flex-direction: row;
+}
+
+#coeur-vide{
+    width: 20px;
+    margin-left: 10px;
+}
+
+.titre-coeur{
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.etoile{
+    display: flex;
+    flex-direction: row;
+    width: 25px;
+    margin-top: 10px;
+}
+
+.etoile img{
+    margin: 0 5px;
+}
+
+.type{
+    background-color: #389430;
+    padding: 10px 0;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.image-films{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    background-color: #fff;
+    padding: 5px;
+}
+
+.coup-de-coeur{
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    color: #fff;
+    font-size: 0.8rem;
+    background-color: red;
+    box-shadow: 2px 2px 2px rgba(49, 49, 49, 0.488);
+    padding: 5px;
+}
+
+.texte-descriptif{
+    width: 40%;
+    text-align: right;
+}
+
+.salles{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.salle1{
+    margin: 0 10px;
+}
+
+.horaire1{
+    background-color: #3885dc;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.icone-salle img, .icone-heure img{
+    width: 25px;
+    filter: invert();
+}
+
+.icone-heure{
+    margin-left: 30px;
+}
+
+.complet{
+    background-color: #e6df15;
+    color: black;
+    padding: 5px;
+}
+
+.films-salles{
+    margin-top: 10px;
+}
+
+.action-sf{
+    display: flex;
+    flex-direction: row;
+}
+
+.type2, .type3{
+    padding: 10px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin: 5px;
+}
+
+.type2{
+    background-color: #940db6;
+}
+
+.type3{
+    background-color: #813116;
 }
 
 @media screen and (max-width: 1200px) {
