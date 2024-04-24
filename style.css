@@ -48,6 +48,11 @@ nav {
 .espace,
 .compte {
   margin: 0 10px;
+  cursor: pointer;
+}
+
+button{
+    cursor: pointer;
 }
 
 .image {
@@ -115,6 +120,7 @@ nav {
     font-size: 1.5rem;
     text-align: center;
     height: 40px;
+    cursor: pointer;
 }
 
 .tarif:hover, .film:hover, .horaire1:hover{
@@ -222,10 +228,34 @@ nav {
     flex-direction: row;
 }
 
-#coeur-vide{
+#coeur-vide {
     width: 20px;
     height: 20px;
     margin-left: 10px;
+    cursor: pointer;
+}
+
+#coeur-vide2{
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#coeur-rouge{
+    display: none;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#coeur-rouge2{
+    display: none;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    cursor: pointer;
 }
 
 .titre-coeur{
@@ -350,6 +380,24 @@ footer{
     padding: 20px;
     color: white;
     text-align: center;
+}
+
+.abonnez-vous{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+    background-color: #e6df15;
+    padding: 10px 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.x{
+    cursor: pointer;
 }
 
 @media screen and (max-width: 1200px) {
